@@ -64,6 +64,7 @@ li {
 }
 .facebook {
 	float: right;
+	margin: auto;
 }
 
 // ここからcardの設定
@@ -106,4 +107,9 @@ footer {
 	display: block;
 	text-align: center;
 	margin-bottom: 15px;
+}
+
+// works.html
+.cover {
+	padding-top: 100px;
 }
