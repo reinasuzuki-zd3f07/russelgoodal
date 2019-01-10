@@ -129,4 +129,22 @@ input[type="submit"] {
 .mic {
 	background: url("../images/mic01.png") center 0 no-repeat;
 }
-// <img src="images/mic-orange.png" class="card-img-top" alt="mic-orange.png">
+
+// works.html
+.container ul {
+	list-style: none;
+	padding-left: 0;
+	margin-left: 0;
+}
+
+h2 {
+	margin-bottom: 1.5rem;
+	padding-bottom: 0.5rem;
+	border-bottom: 1px solid #f28439;
+}
+h2 span {
+	display:inline-block;
+	padding-left: 1.1rem;
+	font-weight: normal;
+	font-size: 1.2rem;
+}
