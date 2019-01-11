@@ -47,10 +47,14 @@
 		</header>
 		<main>
 			<div class="container">
-				<div class="cover">
-				<article>
+				<section class="title">
+					<h1>piyo</h1>
+					<p>piyo</p>
+				</section>
+				<article class=contents>
 					<h2>Price list</h2>
-					<h3>＜通訳＞</h3>
+					<section class="price">
+					<h3><i class="far fa-comments"></i>通訳</h3>
 					<table class="table table-striped">
 					  <thead>
 					    <tr>
@@ -72,7 +76,7 @@
 					    </tr>
 					  </tbody>
 					</table>
-					<h3>＜翻訳＞</h3>
+					<h3><i class="fas fa-language"></i>翻訳</h3>
 					<table class="table table-striped">
 					  <tbody>
 					    <tr>
@@ -87,7 +91,7 @@
 					    </tr>
 					  </tbody>
 					</table>
-					<h3>＜書き起こし翻訳＞</h3>
+					<h3><i class="fas fa-headphones-alt"></i>書き起こし翻訳</h3>
 					<table class="table table-striped">
 					  <tbody>
 					    <tr>
@@ -102,7 +106,7 @@
 					    </tr>
 					  </tbody>
 					</table>
-					<h3>＜ネイティブチェック＞</h3>
+					<h3><i class="far fa-check-circle"></i>ネイティブチェック</h3>
 					<table class="table table-striped">
 					  <tbody>
 					    <tr>
@@ -112,33 +116,37 @@
 					    </tr>
 					</tbody>
 					</table>
+					</section>
 					</article>
-					<article>
+					<article class="contents">
+					<section class="contacts">
 					<h2>Contact form</h2>
-					<p>通訳や翻訳についてのお問い合わせは、下記フォームよりお気軽にお寄せください。</p>
-					<p>Facebookのメッセージからも受け付けております。</p>
-					<p>日本語で受け付け可能です。</p>
+						<p>通訳や翻訳についてのお問い合わせは、下記フォームよりお気軽にお寄せください。</p>
+						<p>Facebookのメッセージからも受け付けております。</p>
+						<p>日本語で受け付け可能です。</p>
 					<ul>
 						<li>必要事項(※)を記入し、「送信」をクリックしてください。</li>
 						<li>ご登録いただいた個人情報は、お問い合わせ内容の確認以外には使用いたしません。</li>
 					</ul>
-			<form action="#">
-				<p><label>お名前（※）<br>
-				<input type="text" name="name" required></label></p>
-				<p><label>メールアドレス（※）<br>
-				<input type="email" name="mail" required></label></p>
-				<p>お問い合わせ種類<br>
-				<label><input type="radio" name="kind" value="0">通訳</label>
-				<label><input type="radio" name="kind" value="1">翻訳</label>
-				<label><input type="radio" name="kind" value="2">出演依頼</label>
-				<label><input type="radio" name="kind" value="3">その他</label></p>
-				<p><label>お問い合わせ内容（※）<br>
-				<textarea name="comment" required></textarea></label></p>
-				<p><input type="submit" value="送信"></p>
-				</form>
-				</article>
+					<form action="#">
+						<p><label>お名前（※）<br>
+						<input type="text" name="name" required></label></p>
+						<p><label>メールアドレス（※）<br>
+						<input type="email" name="mail" required></label></p>
+						<p>お問い合わせ種類<br>
+						<label><input type="radio" name="kind" value="0">通訳</label>
+						<label><input type="radio" name="kind" value="1">翻訳</label>
+						<label><input type="radio" name="kind" value="2">出演依頼</label>
+						<label><input type="radio" name="kind" value="3">その他</label></p>
+						<p><label>お問い合わせ内容（※）<br>
+						<textarea name="comment" required></textarea></label></p>
+						<p><input type="submit" value="送信"></p>
+					</form>
+					</div>
+					</section>
+					</article>
 				</div>
-			</div>
+			<!-- </div> -->
 		</main>
 		<footer>
 			<div class="container">

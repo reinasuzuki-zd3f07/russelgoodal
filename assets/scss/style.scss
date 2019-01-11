@@ -31,6 +31,13 @@ main {
 	margin-top: 50px;
 }
 
+// h2の下線
+h2 {
+		// display: inline-block;
+		border-bottom: 1px dotted #f28439;
+		padding-bottom: 5px;
+}
+
 // 全体設定 ここまで
 
 // ナビゲーション設定 ここから
@@ -125,15 +132,10 @@ footer .container {
 
 .ex  {
 	margin-left: 50px;
-	h2 {
-		display: inline-block;
-		border-bottom: 1px dotted #f28439;
-		padding-bottom: 5px;
-	}
 	p{
-	column-count: 2;
-	line-height: 2;
-	margin: 10px 0 0 0;
+		column-count: 2;
+		line-height: 2;
+		margin: 10px 0 0 0;
 	}
 	i {
 		color: #f28439;
@@ -161,17 +163,18 @@ footer .container {
 // about ここまで
 
 // works.html
-.works h2 {
-	margin-bottom: 2.5rem;
-	padding-bottom: 0.5rem;
-	border-bottom: 1px solid #f28439;
-	span {
+// .works h2 {
+	// margin-bottom: 2.5rem;
+	// padding-bottom: 0.5rem;
+	// border-bottom: 1px solid #f28439;
+// }
+
+.works span {
 		display:inline-block;
 		padding-left: 1.1rem;
 		font-weight: normal;
 		font-size: 1.2rem;
 	}
-}
 
 .works i {
 	display: inline-block;
@@ -199,26 +202,62 @@ footer .container {
 		}
 }
 
-
-
 // works.html ここまで
-
 // sample.htmlここから
-.video {
-	width: 48.7%;
+.data {
+	margin-top:40px;
+	margin-bottom: 20px;
+	h3 {
+	font-size: 1.25rem;
+	display: inline-block;
+	border-bottom: 1px dotted grey;
+	}
+	p {
+		font-size: .8rem;
+	}
+	i {
+		display: inline-block;
+		font-size: 1.2rem;
+		padding-left: 5px;
+	}
 }
-
 .mic {
 	background: url("../images/mic01.png") center 0 no-repeat;
 }
 
-.voice {
-	margin-bottom: 1.8rem;
-}
 // sample.htmlここまで
 
 
-// // contact.html
+// contact.html
+
+// pricelistの設定
+.price {
+	margin-top:40px;
+	margin-bottom: 20px;
+	h3 {
+	padding-bottom: 15px;
+	margin-top: 10px;
+	font-size: 1.5rem;
+	display: inline-block;
+	}
+	i {
+		display: inline-block;
+		font-size: 1.2rem;
+		padding-left: 5px;
+	}
+}
+.table {
+	margin-bottom: 50px;
+}
+
+th,td {
+	width: 30%;
+}
+
+
+// contact formの設定
+
+
 input[type="text"] {
 	width: 300px;
 }
@@ -240,11 +279,5 @@ input[type="submit"] {
 	font-size: 1.5rem;
 }
 
-.table {
-	margin-bottom: 2rem;
-}
 
-th,td {
-	width: 30%;
-}
 
