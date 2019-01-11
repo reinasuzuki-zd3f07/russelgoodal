@@ -2,21 +2,15 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,700');
 @import "bootstrap";
 
+// 全体の設定 ここから
 *{
 	box-sizing: border-box;
 }
 
 body, html {
     height: 100%;
+    background-color: #fafafa;
 }
-
-// body{
-// 	margin-top:76px;
-// }
-
-// header{
-// 	background: url("../images/line.png") 0 0 repeat-x;
-// }
 
 nav {
 	background: url("../images/line.png") 0 0 repeat-x;
@@ -26,26 +20,64 @@ main {
 	margin-bottom: 50px;
 }
 
+#wrapper{
+    min-height: 100vh;
+    display: flex;
+  	flex-direction: column;
+}
+
+// article要素余白
+.contents {
+	margin-top: 50px;
+}
+
+// 全体設定 ここまで
+
+// ナビゲーション設定 ここから
+
 .navbar {
 	width:1110px;
 	padding-left: 0;
 	padding-right: 0;
 }
 
+#navbarCollapse li {
+	margin: 5px auto;
+}
 .fa-bars {
 	color: black;
 }
+
+// ナビゲーション設定 ここまで
+
+// フッター設定 ここから
+footer {
+	margin-top: auto;
+	background: url("../images/line.png") 0 0 repeat-x;
+	margin-left: auto;
+	margin-right: auto;
+	width:1110px;
+}
+
+footer .container {
+	margin-top: 50px;
+}
+
+.copyright {
+	padding:1.5em;
+	display: block;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+// フッター設定 ここまで
+
+// index ここから
 
 .hero {
 	margin-top: 76px;
 	margin-bottom: 30px;
 	text-align: center;
-}
-
-#wrapper{
-    min-height: 100vh;
-    display: flex;
-  	flex-direction: column;
 }
 
 .menu{
@@ -63,48 +95,128 @@ main {
 	flex-wrap: wrap;
 	padding-left: 0;
 }
-li {
-	margin: 5px auto;
-}
+
 .facebook {
 	float: right;
 	margin: auto;
 }
 
-
-footer {
-	margin-top: auto;
-	background: url("../images/line.png") 0 0 repeat-x;
-	margin-left: auto;
-	margin-right: auto;
-	width:1110px;
-// 	width: 100%;
-// 	height: 100px;
-// 	position: absolute;
-// 	text-align: center;
-// 	bottom: 0;
-// padding-top: 10px;
-// 		p {
-// 			display: block;
-// 			line-height: 100px;
-// 		}
+// index ここまで
+// about.html ここから
+.title {
+	padding-top: 76px;
+	margin-top: 20px;
+	margin-bottom: 80px;
 }
 
-footer .container {
-	margin-top: 50px;
+.ab-r {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
-.copyright {
-	padding:1.5em;
-	display: block;
-	text-align: center;
-	margin-bottom: 15px;
+.self {
+	width: 450%;
+	height: 100%;
+	padding-bottom: 35%;
+	background: url("../images/hero.png") 0 0 no-repeat;
+	background-size: cover;
 }
+
+.ex  {
+	margin-left: 50px;
+	h2 {
+		display: inline-block;
+		border-bottom: 1px dotted #f28439;
+		padding-bottom: 5px;
+	}
+	p{
+	column-count: 2;
+	line-height: 2;
+	margin: 10px 0 0 0;
+	}
+	i {
+		color: #f28439;
+	}
+}
+.intrduction{
+	margin-top:40px;
+	margin-bottom: 20px;
+	i {
+		color: #f28439;
+		font-size: 1.2rem;
+	}
+	p {
+		column-count: 2;
+		line-height: 2;
+		margin: 10px 0 0 0;
+	}
+	h3 {
+		display: inline-block;
+		border-bottom: 1px dotted #f28439;
+		padding-bottom: 5px;
+	}
+}
+
+// about ここまで
 
 // works.html
-.cover {
-	padding-top: 100px;
+.works h2 {
+	margin-bottom: 2.5rem;
+	padding-bottom: 0.5rem;
+	border-bottom: 1px solid #f28439;
+	span {
+		display:inline-block;
+		padding-left: 1.1rem;
+		font-weight: normal;
+		font-size: 1.2rem;
+	}
 }
+
+.works i {
+	display: inline-block;
+	padding-right: 1.2rem;
+}
+
+.works h3 {
+	margin-bottom: 2rem;
+}
+
+.lineup ul {
+	list-style: none;
+	padding-left: 0;
+	margin-left: 0;
+	// margin-bottom: 3rem;
+	line-height: 1.2rem;
+		li {
+			border-bottom: 1px dotted grey;
+			padding-bottom: 5px;
+			margin-bottom: 1.5rem;
+		}
+		span {
+			line-height: 1rem;
+			font-size: .8rem;
+		}
+}
+
+
+
+// works.html ここまで
+
+// sample.htmlここから
+.video {
+	width: 48.7%;
+}
+
+.mic {
+	background: url("../images/mic01.png") center 0 no-repeat;
+}
+
+.voice {
+	margin-bottom: 1.8rem;
+}
+// sample.htmlここまで
+
 
 // // contact.html
 input[type="text"] {
@@ -136,40 +248,3 @@ th,td {
 	width: 30%;
 }
 
-// sample.html
-.video {
-	width: 48.7%;
-}
-
-.mic {
-	background: url("../images/mic01.png") center 0 no-repeat;
-}
-
-.voice {
-	margin-bottom: 1.8rem;
-}
-
-// works.html
-
-.company {
-	list-style: none;
-	padding-left: 0;
-	margin-left: 0;
-	margin-bottom: 3rem;
-	line-height: 1.5rem;
-}
-
-h2 {
-	margin-bottom: 1.5rem;
-	padding-bottom: 0.5rem;
-	border-bottom: 1px solid #f28439;
-}
-h2 span {
-	display:inline-block;
-	padding-left: 1.1rem;
-	font-weight: normal;
-	font-size: 1.2rem;
-}
-.container h3 {
-	padding-bottom: 20px;
-}
