@@ -63,7 +63,7 @@ footer {
 	background: url("../images/line.png") 0 0 repeat-x;
 	margin-left: auto;
 	margin-right: auto;
-	width:1110px;
+	width-max:1110px;
 }
 
 footer .container {
@@ -76,7 +76,6 @@ footer .container {
 	text-align: center;
 	margin-bottom: 15px;
 }
-
 // フッター設定 ここまで
 
 // index ここから
@@ -201,7 +200,6 @@ footer .container {
 			font-size: .8rem;
 		}
 }
-
 // works.html ここまで
 // sample.htmlここから
 .data {
@@ -218,7 +216,7 @@ footer .container {
 	i {
 		display: inline-block;
 		font-size: 1.2rem;
-		padding-left: 5px;
+		padding-left: 10px;
 	}
 }
 .mic {
@@ -243,17 +241,28 @@ footer .container {
 	i {
 		display: inline-block;
 		font-size: 1.2rem;
+		padding-right: 5px;
 		padding-left: 5px;
 	}
 }
 .table {
+	// margin-bottom: 50px;
+	border-bottom: 1px solid #ddd;
+	caption {
+		font-size: 0.8rem;
+	}
+	ul {
+		list-style: none;
+		padding-left: 0;
+	}
+}
+.chart {
+	border: 1px solid #333;
 	margin-bottom: 50px;
 }
-
 th,td {
 	width: 30%;
 }
-
 
 // contact formの設定
 
