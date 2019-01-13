@@ -28,7 +28,7 @@ main {
 
 // article要素余白
 .contents {
-	margin-top: 50px;
+	margin-top: 80px;
 }
 
 // h2の下線
@@ -247,15 +247,17 @@ footer .container {
 }
 .table {
 	// margin-bottom: 50px;
+	// 表だけ囲む場合は上記margin-bottonを有効にしてください。
 	border-bottom: 1px solid #ddd;
 	caption {
 		font-size: 0.8rem;
 	}
 	ul {
 		list-style: none;
-		padding-left: 0;
+		padding-left: 12px;
 	}
 }
+// 各価格表ごとに囲む場合は、.chartを有効にしてください。(今はこっちです。)
 .chart {
 	border: 1px solid #333;
 	margin-bottom: 50px;
@@ -265,7 +267,20 @@ th,td {
 }
 
 // contact formの設定
-
+.question {
+	margin-top:40px;
+	margin-bottom: 20px;
+	ul {
+		list-style: none;
+		padding-left: 0;
+		margin-top: 20px;
+		font-size: 0.8rem;
+		// padding-left: 12px;
+	}
+	i {
+		color: #f28439;
+	}
+}
 
 input[type="text"] {
 	width: 300px;
