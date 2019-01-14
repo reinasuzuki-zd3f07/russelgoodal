@@ -38,6 +38,10 @@ h2 {
 		padding-bottom: 5px;
 }
 
+// h1 下の余白
+h1 {
+	padding-bottom: 15px;
+}
 // 全体設定 ここまで
 
 // ナビゲーション設定 ここから
@@ -90,16 +94,23 @@ footer .container {
 	width: 50%;
 	float: left;
 }
+// card全体の設定
 .card {
 	float: left;
 	height: 20rem;
+	margin-right: 20px;
+	margin-bottom: 20px;
 }
+// cardの中の設定
 .cards{
 	list-style: none;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	padding-left: 0;
+	a {
+		color: #333;
+		}
 }
 
 .facebook {
@@ -132,7 +143,7 @@ footer .container {
 .ex  {
 	margin-left: 50px;
 	p{
-		column-count: 2;
+		// column-count: 2;
 		line-height: 2;
 		margin: 10px 0 0 0;
 	}
@@ -141,6 +152,9 @@ footer .container {
 	}
 }
 .intrduction{
+	width:100%;
+	// display: flex;
+	// flex-direction: row;
 	margin-top:40px;
 	margin-bottom: 20px;
 	i {
@@ -148,7 +162,7 @@ footer .container {
 		font-size: 1.2rem;
 	}
 	p {
-		column-count: 2;
+		// column-count: 2;
 		line-height: 2;
 		margin: 10px 0 0 0;
 	}
