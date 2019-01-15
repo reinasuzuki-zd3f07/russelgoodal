@@ -29,12 +29,15 @@
 	#navbarCollapse li {
 		margin: 5px auto;
 	}
-	#navbarCollapse ul {
-		margin: 5px auto;
-	}
 
-	.nab-link {
-		text-align: center!important;
+	.nav-link {
+		text-align: center;
+	}
+	.navbar {
+		width: 429px;
+	}
+	.fa-bars {
+		padding-right: 15px;
 	}
 	// footer
 	 footer.container{
