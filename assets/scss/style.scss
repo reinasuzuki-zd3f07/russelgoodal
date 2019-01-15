@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,700');
 @import "bootstrap";
+@import url("responsive.css") screen and (max-width: 768px);
 
 // 全体の設定 ここから
 *{
@@ -21,6 +22,7 @@ main {
 }
 
 #wrapper{
+	max-width: 100%;
     min-height: 100vh;
     display: flex;
   	flex-direction: column;
@@ -47,7 +49,8 @@ h1 {
 // ナビゲーション設定 ここから
 
 .navbar {
-	max-width:1110px;
+	width:1110px;
+	max-width:100%;
 	padding-left: 0;
 	padding-right: 0;
 }
@@ -59,6 +62,19 @@ h1 {
 	color: black;
 }
 
+// スマホでの表示
+// @media screen and (max-width:767px){
+// 	.navbar{
+// 	max-width: 100%;
+// 		ul {
+// 			padding-left: 0;
+// 		}
+// 	}
+// 	#navbarCollapse li {
+// 		margin: 5px auto;
+// 	}
+// }
+
 // ナビゲーション設定 ここまで
 
 // フッター設定 ここから
@@ -68,10 +84,12 @@ footer {
 	margin-left: auto;
 	margin-right: auto;
 	width:1110px;
+	max-width: 100%;
 }
 
 footer .container {
 	margin-top: 50px;
+	max-width: 100%;
 }
 
 .copyright {
@@ -80,6 +98,25 @@ footer .container {
 	text-align: center;
 	margin-bottom: 15px;
 }
+// @media screen and (max-width:768px){
+//  footer.container{
+// 	max-width: 100%;
+//  }
+//  footer {
+// 	margin-top: auto;
+// 	background: url("../images/line.png") 0 0 repeat-x;
+// 	margin-left: auto;
+// 	margin-right: auto;
+// }
+// .copyright {
+// 	padding:1.5em;
+// 	display: block;
+// 	text-align: center;
+// 	margin-bottom: 15px;
+// }
+// }
+
+
 // フッター設定 ここまで
 
 // index ここから
@@ -114,6 +151,7 @@ footer .container {
 }
 
 .facebook {
+	width: 500px;
 	float: right;
 	margin: auto;
 }
@@ -135,14 +173,6 @@ footer .container {
 		width: 50%;
 	}
 }
-
-// .self {
-// 	width: 450%;
-// 	height: 100%;
-// 	padding-bottom: 35%;
-// 	background: url("../images/hero.png") 0 0 no-repeat;
-// 	background-size: cover;
-// }
 
 .ex  {
 	margin-left: 50px;
