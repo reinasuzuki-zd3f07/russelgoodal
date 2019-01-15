@@ -127,34 +127,37 @@ footer .container {
 }
 
 .ab-r {
+	width: 100%;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	align-items: flex-start;
+	img{
+		width: 50%;
+	}
 }
 
-.self {
-	width: 450%;
-	height: 100%;
-	padding-bottom: 35%;
-	background: url("../images/hero.png") 0 0 no-repeat;
-	background-size: cover;
-}
+// .self {
+// 	width: 450%;
+// 	height: 100%;
+// 	padding-bottom: 35%;
+// 	background: url("../images/hero.png") 0 0 no-repeat;
+// 	background-size: cover;
+// }
 
 .ex  {
 	margin-left: 50px;
-	p{
-		// column-count: 2;
-		line-height: 2;
+	p{line-height: 2;
 		margin: 10px 0 0 0;
 	}
 	i {
 		color: #f28439;
 	}
 }
+
 .intrduction{
-	width:100%;
-	// display: flex;
-	// flex-direction: row;
+	// width:100%;
+	position: relative;
+	overflow: hidden;
 	margin-top:40px;
 	margin-bottom: 20px;
 	i {
@@ -162,7 +165,8 @@ footer .container {
 		font-size: 1.2rem;
 	}
 	p {
-		// column-count: 2;
+		display: flex;
+		flex-direction: row;
 		line-height: 2;
 		margin: 10px 0 0 0;
 	}
@@ -171,6 +175,20 @@ footer .container {
 		border-bottom: 1px dotted #f28439;
 		padding-bottom: 5px;
 	}
+	img {
+		padding: 5px;
+		border: 1px solid #ddd;
+	}
+}
+
+.intrduction:nth-of-type(odd) img {
+	float: right;
+	margin-left: 40px;
+}
+
+.intrduction:nth-of-type(even) img {
+	float: left;
+	margin-right: 40px;
 }
 
 // about ここまで
