@@ -12,7 +12,7 @@ body, html {
 	// width: 1110px;
     height: 100%;
     background-color: #fafafa;
-    margin: 0 auto;
+    margin: 0;
     // text-align: center; 不要(.infoが中央揃えになる)
 }
 
@@ -448,6 +448,8 @@ input[type="submit"] {
 	// 	box-sizing: border-box;
 	// }
 	*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
 	// .selector-for-some-widget {
@@ -459,6 +461,7 @@ input[type="submit"] {
 		max-width: 100%;
 		height: auto;
 	}
+
 	body {
 		// float:left;
 		margin: 0 auto;
@@ -516,28 +519,29 @@ input[type="submit"] {
 
 	//index.html-ここから直す
 	#hero {
-		max-width: 100%;
-		height: auto;
+		display: none;
+		// max-width: 100%;
+		// height: auto;
 	}
 
 	.menu{
-		max-width: 100%;
+		max-width: 50%;
 		text-align: center;
 	}
 	.cards {
-		max-width: 100%!important;
+		max-width: 50%!important;
 		// display: flex!important;
 		flex-direction: column!important;
-		margin: 10px auto!important;
-		text-align: center!important;
+		// margin: 10px auto!important;
+		// text-align: center!important;
 		justify-content: center!important;
 	}
 
-	// .card {
-	// 	height: 20rem;
-	// // width: 100%;
-	// // margin: 10px auto;
-	// }
+	.card {
+		height: 20rem;
+	// width: 100%;
+	// margin: 10px auto;
+	}
 
 	.info {
 		margin: 20px auto;
@@ -559,7 +563,7 @@ input[type="submit"] {
 		width: 100%;
 		// display: flex;
 		// flex-direction: colum;
-		img{
+		img {
 			// clear: both;
 			display: none;
 		}
