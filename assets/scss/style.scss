@@ -76,7 +76,7 @@ h1 {
 
 .navbar {
 	width:1110px;
-	max-width:100%;
+	// max-width:100%;
 	padding-left: 0;
 	padding-right: 0;
 }
@@ -178,7 +178,7 @@ footer .container {
 	// flex-direction: row;
 	// flex-wrap: nowrap;
 	a {
-		width: 100%;
+		// width: 50px;
 		color: #333;
 		}
 }
@@ -444,18 +444,26 @@ input[type="submit"] {
 
 // mediaの読み込み トライアル
 @media screen and (max-width: 768px) {
-	html * {
-		box-sizing: border-box;
-	}
+	// html {
+	// 	box-sizing: border-box;
+	// }
+	*, *:before, *:after {
+  box-sizing: inherit;
+}
+	// .selector-for-some-widget {
+	// 	box-sizing: content-box;
+	// }
+
 	img {
 		display:block;
 		max-width: 100%;
 		height: auto;
 	}
 	body {
+		// float:left;
 		margin: 0 auto;
 	 	text-size-adjust: 100%;
-	 	max-width: 100%!important;
+	 	max-width: 100%;
 	 	// height: 100%;
 		}
 		#wrapper {
@@ -476,7 +484,7 @@ input[type="submit"] {
 	// }
 	.navbar{
 		max-width: 100%;
-		width: 375px;
+		// width: 375px;
 		// ul {
 		// 		padding-left: 0;
 		// }
@@ -564,4 +572,5 @@ input[type="submit"] {
 			margin: 0 auto 10px auto!important;
 		}
 	}
+
 }
