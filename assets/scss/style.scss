@@ -162,6 +162,7 @@ footer .container {
 	// flex-wrap: nowrap;
 	padding-left: 0;
 	a {
+		width:250px;
 		color: #333;
 		}
 }
@@ -185,10 +186,16 @@ footer .container {
 
 .info {
 	width: 500px;
-	float: right;
+	float: left;
 	// display: flex;
-	margin-right:36px;
+	margin-left:76px;
 	// margin-top: 20px;
+	h3{
+		display: inline-block;
+		font-size: 1.2rem;
+		border-bottom: 1px dotted #f28439;
+		padding-bottom: 5px;
+		}
 	ul{
 		list-style: none;
 		padding-left: 10px;
@@ -198,11 +205,6 @@ footer .container {
 		color: #f28439;
 		padding-right: 5px;
 	}
-	h3{
-		font-size: 1.2rem;
-		border-bottom: 1px dotted #f28439;
-		padding-bottom: 5px;
-		}
 }
 // index ここまで
 // about.html ここから

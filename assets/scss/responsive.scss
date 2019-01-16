@@ -22,7 +22,8 @@
 		// navigation
 	.navbar{
 	max-width: 100%;
-		// ul {
+	width: 375px;
+	// ul {
 		// 	padding-left: 0;
 		// }
 	}
@@ -32,9 +33,10 @@
 
 	.nav-link {
 		text-align: center;
+		justify-content: center;
 	}
 	.navbar {
-		width: 429px;
+		width: 375px;
 	}
 	.fa-bars {
 		padding-right: 15px;
@@ -58,6 +60,7 @@
 	//index.html-ここから直す
 	.hero {
 		max-width: 100%;
+		height: auto;
 	}
 
 	.menu{
@@ -67,8 +70,8 @@
 	.cards {
 		// width: 414px;
 		flex-direction: column!important;
-		margin: 10px auto;
-		text-align: center;
+		margin: 10px auto!important;
+		text-align: center!important;
 		justify-content: center!important;
 	}
 
@@ -79,13 +82,15 @@
 	// }
 
 	.info {
-		clear: both!important;
-		margin-left: 50px!important;
+		margin: 20px auto;
+		font-size: 0.8rem;
+		// clear: both;
+		// margin-left: 50px;
 	}
 
 	.facebook {
 		max-width: 100%;
-		margin: auto;
+		margin-left: 0!important;
 	}
 
 
