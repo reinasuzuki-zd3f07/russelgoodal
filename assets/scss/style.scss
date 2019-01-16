@@ -9,7 +9,7 @@
 }
 
 body, html {
-	width: 1110px;
+	// width: 1110px;
     height: 100%;
     background-color: #fafafa;
     margin: 0 auto;
@@ -178,7 +178,7 @@ footer .container {
 	// flex-direction: row;
 	// flex-wrap: nowrap;
 	a {
-		// width:250px;
+		width: 100%;
 		color: #333;
 		}
 }
@@ -442,4 +442,126 @@ input[type="submit"] {
 // contact formの設定ーここまで
 // contact.htmlここまで
 
+// mediaの読み込み トライアル
+@media screen and (max-width: 768px) {
+	html * {
+		box-sizing: border-box;
+	}
+	img {
+		display:block;
+		max-width: 100%;
+		height: auto;
+	}
+	body {
+		margin: 0 auto;
+	 	text-size-adjust: 100%;
+	 	max-width: 100%!important;
+	 	// height: 100%;
+		}
+		#wrapper {
+			max-width: 100%;
+		}
+		.container {
+			max-width:100%;
+		}
 
+		// ナビゲーションの設定ーここから
+		//ナビゲーションのcontactとEnglishを真ん中揃え
+		.nav-link {
+			text-align: center;
+			justify-content: center;
+		}
+	// #navbarCollapse li {
+	// 	margin: 5px auto;
+	// }
+	.navbar{
+		max-width: 100%;
+		width: 375px;
+		// ul {
+		// 		padding-left: 0;
+		// }
+	}
+
+	// ハンバーガーアイコン
+	.fa-bars {
+		padding-right: 15px;
+	}
+
+	// フッターの設定ーここから
+	 footer.container{
+		max-width: 100%;
+	 }
+	 footer {
+	 	max-width: 100%;
+		margin-top: auto;
+		background: url("../images/line.png") 0 0 repeat-x;
+		// margin-left: auto;
+		// margin-right: auto;
+	}
+	// .copyright {
+	// 	padding:1.5em;
+	// 	display: block;
+	// 	text-align: center;
+	// 	margin-bottom: 15px;
+	// }
+	// フッターの設定ーここまで
+
+	//index.html-ここから直す
+	#hero {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.menu{
+		max-width: 100%;
+		text-align: center;
+	}
+	.cards {
+		max-width: 100%!important;
+		// display: flex!important;
+		flex-direction: column!important;
+		margin: 10px auto!important;
+		text-align: center!important;
+		justify-content: center!important;
+	}
+
+	// .card {
+	// 	height: 20rem;
+	// // width: 100%;
+	// // margin: 10px auto;
+	// }
+
+	.info {
+		margin: 20px auto;
+		font-size: 0.8rem;
+		// clear: both;
+		// margin-left: 50px;
+	}
+
+	.facebook {
+		max-width: 100%;
+		margin-left: 0!important;
+	}
+
+	//about.html
+	.intrduction img {
+		display: none;
+	}
+	.ab-r {
+		width: 100%;
+		// display: flex;
+		// flex-direction: colum;
+		img{
+			// clear: both;
+			display: none;
+		}
+	}
+	.ex {
+		margin-left: 0px!important;
+		img {
+			display: block!important;
+			text-align: center!important;
+			margin: 0 auto 10px auto!important;
+		}
+	}
+}
