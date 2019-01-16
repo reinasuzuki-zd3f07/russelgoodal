@@ -52,6 +52,7 @@
 						<p>これまでご依頼いただいた企業様・官公庁様のご紹介です。</p>
 					    <p>テレビ局・制作会社　テレビ番組・VPの通訳・台本翻訳・字幕翻訳を得意としております。</p>
 					</section>
+					<div id="page-top"><a id="move-page-top"><i class="fa fa-chevron-circle-up fa-3x"></i></a></div>
 					<article class="contents">
 						<section class="works">
 						<h2><i class="fas fa-globe-asia"></i>Japan<span>Since 1994</span></h2>
@@ -138,5 +139,19 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/holder.min.js"></script>
+	<script>
+    $(function(){
+      $(window).scroll(function(){
+       if ($(window).scrollTop() > 300){
+         $("#page-top").fadeIn();
+       }else{
+         $("#page-top").fadeOut();
+       }
+     });
+      $("#move-page-top").click(function(){
+       $("html,body").animate({scrollTop: 0}, 350);
+     });
+    });
+  </script>
 </body>
 </html>
