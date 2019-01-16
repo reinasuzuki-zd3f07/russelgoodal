@@ -9,8 +9,11 @@
 }
 
 body, html {
+	width: 1110px;
     height: 100%;
     background-color: #fafafa;
+    margin: 0 auto;
+    // text-align: center; 不要(.infoが中央揃えになる)
 }
 
 nav {
@@ -22,10 +25,13 @@ main {
 }
 
 #wrapper{
+	// margin: 0 auto;
+	// width:1110px;
 	max-width: 100%;
     min-height: 100vh;
     display: flex;
   	flex-direction: column;
+  	justify-content: center;
 }
 
 // 上に戻るボタン
@@ -104,7 +110,7 @@ footer {
 	margin-left: auto;
 	margin-right: auto;
 	width:1110px;
-	max-width: 100%;
+	// max-width: 100%;
 }
 
 footer .container {
@@ -118,28 +124,38 @@ footer .container {
 	text-align: center;
 	margin-bottom: 15px;
 }
+// フッター設定ーここまで
+// .containerの設定ーここまで
+.container {
+	margin: 0 auto 50px auto;
+	width: 1110px;
+	padding: 0;
+	// display: flex; いらない
+	// flex-direction: row; いらない
+	// flex-wrap: wrap; いらない
+	// justify-content: center; いらない
+}
+// .container {
+// 	padding-left: 0;
+// 	padding-right: 0;
+// 	margin: 0 auto 50px auto;
+// }※これはダブって書いていた設定なので削除
 
-// フッター設定 ここまで
-// index ここから
-.hero {
+// .containerの設定ーここまで
+
+// index.htmlの設定ーここから
+// ヒーローイメージの設定ーここから
+#hero {
+	width: 1110px;
+	height: 325px;
+	margin: 0 auto 50px auto;
+	background: url("../images/heroFixed.jpg") center center no-repeat;
 	// margin-top: 76px;
 	// margin-bottom: 50px; 下にまとめて追加。
-	text-align: center;
-	width: 1110px;
-	margin: 76px auto 50px auto;
-	//仮追加
+	// text-align: center; いらない
 }
-
-// .container {
-// 	width: 1110px;
-// 	padding: 0;
-	// display: flex;
-	// flex-direction: row;
-	// flex-wrap: wrap;
-	// justify-content: center;
-// }
-
-// メニューの設定
+// ヒーローイメージの設定ーここまで
+// メニューの設定ーここから
 .menu{
 	width: 1110px;
 	// display: flex;
@@ -149,7 +165,7 @@ footer .container {
 	// float: left;
 }
 
-// card4枚の設定
+// メニューの中のcard4枚の設定
 .cards{
 	list-style: none;
 	display: flex;
@@ -157,38 +173,40 @@ footer .container {
 	flex-wrap: nowrap;
 	align-content: space-between;
 	justify-content: space-between;
+	padding-left: 0;
 	// display: flex;
 	// flex-direction: row;
 	// flex-wrap: nowrap;
-	padding-left: 0;
 	a {
-		width:250px;
+		// width:250px;
 		color: #333;
 		}
 }
 
-// card1枚ずつの設定
+// メニュの中のcard各1枚ずつの設定
 .card {
-	// float: left; (解除)
 	height: 350px;
 	width: 250px;
-	// margin-right: 20px;
 	margin-bottom: 20px;
 	// width: 25%;
+	// float: left; (解除)
+	// margin-right: 20px;
 }
-
+// フェイスブックの設定ここから
 .facebook {
 	width: 500px;
 	float: left;
-	// display: flex;
 	margin: auto;
+	// display: flex;
 }
+// フェイスブックの設定ここまで
 
+// 個人情報の設定ーここから
 .info {
 	width: 500px;
 	float: left;
-	// display: flex;
 	margin-left:76px;
+	// display: flex;
 	// margin-top: 20px;
 	h3{
 		display: inline-block;
@@ -206,12 +224,16 @@ footer .container {
 		padding-right: 5px;
 	}
 }
-// index ここまで
+// 個人情報の設定ーここまで
+// indexーここまで
+
 // about.html ここから
 .title {
 	padding-top: 76px;
-	margin-top: 20px;
+	// margin-top: 20px;
 	margin-bottom: 80px;
+	margin-left: 0;
+	// margin-right: auto;
 }
 
 .ab-r {
@@ -274,10 +296,10 @@ footer .container {
 	margin-right: 40px;
 }
 
-// about ここまで
+// aboutーここまで
 
-// works.html
-// .works h2 {
+// works.htmlーここから
+// .works h2 { （不要）
 	// margin-bottom: 2.5rem;
 	// padding-bottom: 0.5rem;
 	// border-bottom: 1px solid #f28439;
@@ -339,11 +361,8 @@ footer .container {
 }
 
 // sample.htmlここまで
-
-
-// contact.html
-
-// pricelistの設定
+// contact.htmlーここから
+// pricelistの設定ーここから
 .price {
 	margin-top:40px;
 	margin-bottom: 20px;
@@ -380,8 +399,8 @@ footer .container {
 th,td {
 	width: 30%;
 }
-
-// contact formの設定
+// pricelistの設定ーここまで
+// contact formの設定ーここから
 .question {
 	margin-top:40px;
 	margin-bottom: 20px;
@@ -420,5 +439,7 @@ input[type="submit"] {
 .submit:hover {
 	background-color: rgba(242,132,57,1);
 }
+// contact formの設定ーここまで
+// contact.htmlここまで
 
 
