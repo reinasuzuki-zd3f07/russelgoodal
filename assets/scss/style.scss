@@ -4,6 +4,8 @@
 @import url("responsive.css") screen and (max-width: 768px);
 
 // 全体の設定 ここから
+$colDefault: #f28439;
+
 *{
 	box-sizing: border-box;
 }
@@ -79,11 +81,23 @@ h1 {
 	// max-width:100%;
 	padding-left: 0;
 	padding-right: 0;
+	:hover{
+		color: #f28439;
+	}
 }
 
+// ホバー時に背景色をつけたい
 #navbarCollapse li {
 	margin: 5px auto;
 }
+.nav-link:hover{
+	color: #f28439;
+}
+
+.nav-item li:hover{
+	background-color: $colDefault;
+}
+
 .fa-bars {
 	color: black;
 }
@@ -253,6 +267,7 @@ footer .container {
 	}
 	i {
 		color: #f28439;
+		padding-right: 5px;
 	}
 	img {
 		display:none;
@@ -267,7 +282,8 @@ footer .container {
 	margin-bottom: 20px;
 	i {
 		color: #f28439;
-		font-size: 1.2rem;
+		padding-left: 5px;
+		// font-size: 1.2rem;
 	}
 	p {
 		display: flex;
@@ -284,6 +300,9 @@ footer .container {
 		padding: 5px;
 		border: 1px solid #ddd;
 	}
+	#private {
+		margin-top: 57px;
+		}
 }
 
 .intrduction:nth-of-type(odd) img {
@@ -339,6 +358,12 @@ footer .container {
 }
 // works.html ここまで
 // sample.htmlここから
+.contents i {
+
+		display: inline-block;
+		padding-right: 5px;
+		color: #f28439;
+}
 .data {
 	margin-top:40px;
 	margin-bottom: 20px;
@@ -349,11 +374,6 @@ footer .container {
 	}
 	p {
 		font-size: .8rem;
-	}
-	i {
-		display: inline-block;
-		font-size: 1.2rem;
-		padding-left: 10px;
 	}
 }
 .mic {
